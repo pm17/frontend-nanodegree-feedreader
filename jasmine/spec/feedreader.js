@@ -125,6 +125,7 @@ $(function() {
         });
 
         it('content actually changes', () => {
+            //compare the h2 values of both the feeds 
             $('.entry h2').each(function(i, each) {
                 //console.log(i, $(this).text(), feedListInitial[i]);
                 expect($(this).text() == feedListInitial[i]).toBe(false);
