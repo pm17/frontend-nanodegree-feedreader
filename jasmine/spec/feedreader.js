@@ -121,10 +121,12 @@ $(function() {
             loadFeed(0, function(){
             	feedListInitial = $('.entry').text();
             	//console.log(feedListInitial);	
+            loadFeed(1, function(){
+                done();
+            });
             });
     
             //load the feed for the second index and return a callback param done
-            loadFeed(1, done);
         });
 
         it('content actually changes', () => {
